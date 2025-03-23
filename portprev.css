@@ -1,0 +1,116 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, p, ul, ol, table {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    padding: 20px;
+}
+
+/* Header styles */
+h1 {
+    color: #00bcd4; /* Cyan color for headers */
+    text-align: center;
+    margin-bottom: 10px;
+    animation: fadeIn 1s; /* Animation for header */
+}
+
+h2 {
+    color: #03a9f4; /* Lighter blue for sub-headers */
+    margin-top: 20px;
+    animation: slideIn 0.5s; /* Animation for sub-headers */
+}
+
+/* Paragraph styles */
+p {
+    margin: 10px 0;
+    animation: fadeIn 1s; /* Animation for paragraphs */
+}
+
+/* Link styles */
+a {
+    color: #03a9f4; /* Light blue for links */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+a:hover {
+    color: #00bcd4; /* Change color on hover */
+    text-decoration: underline;
+}
+
+/* List styles */
+ul, ol {
+    margin-left: 20px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    animation: fadeIn 1s; /* Animation for table */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #444; /* Darker border for table */
+}
+
+th {
+    background-color: #1e1e1e; /* Darker header background */
+    color: #00bcd4; /* Cyan text for header */
+}
+
+/* Input styles */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #444; /* Dark border */
+    border-radius: 4px;
+    background-color: #1e1e1e; /* Dark input background */
+    color: #e0e0e0; /* Light text color */
+    transition: border-color 0.3s; /* Smooth transition for input focus */
+}
+
+input[type="text"]:focus {
+    border-color: #00bcd4; /* Change border color on focus */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #bbb; /* Lighter gray for footer text */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
